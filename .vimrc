@@ -3,6 +3,7 @@ set backspace=indent,eol,start
 set nu
 set cursorline
 set ruler
+set hls
 syntax on
 colorscheme desert
 
