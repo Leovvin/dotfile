@@ -4,6 +4,8 @@ set nu
 set cursorline
 set ruler
 set hls
+set ts=4
+set expandtab
 syntax on
 colorscheme desert
 
