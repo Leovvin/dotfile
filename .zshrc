@@ -82,3 +82,12 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+# Personal Config
+if [ -d ~/.initsh ];then
+    for i in ~/.initsh/*.sh; do
+        if [ -f $i ];then
+            . $i
+        fi
+    done
+fi
