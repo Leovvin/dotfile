@@ -12,9 +12,9 @@ function install_vim_env
 {
     echo_start "install vim env"
     if [ -f ~/.vimrc ]; then
-	rm -f ~/.vimrc
+    	rm -f ~/.vimrc
     fi
-#    ln -s .vimrc ~
+    ln -s ~/.dotfile/.vimrc ~
     echo_end "install vim env"
 }
 
