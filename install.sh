@@ -1,27 +1,23 @@
 #!/bin/bash
 
-function echo_start
+function echo_with_line
 {
-    echo "----------------$1 start -----------------------"
-}
-function echo_end
-{
-    echo "----------------$1 succed-----------------------"
+    echo "-------------------$1-----------------------"
 }
 function install_vim_env
 {
-    echo_start "install vim env"
+    echo_with_line "install vim env start"
     if [ -f ~/.vimrc ]; then
     	rm -f ~/.vimrc
     fi
     ln -s ~/.dotfile/.vimrc ~
-    echo_end "install vim env"
+    echo_with_line "install vim env end"
 }
 
 function install_zsh_env
 {
-    echo_start "install zsh env"
-    echo_end "install zsh env"
+    echo_with_line "install zsh start"
+    echo_with_line "install zsh end"
 }
 
 function main
