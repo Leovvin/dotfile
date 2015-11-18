@@ -17,13 +17,17 @@ function install_vim_env
 function install_zsh_env
 {
     echo_with_line "install zsh start"
+    if [ -f ~/.zshrc ]; then
+    	rm -f ~/.zshrc
+    fi
+    ln -s ~/.dotfile/.zshrc ~
     echo_with_line "install zsh end"
 }
 
 function main
 {
     install_vim_env
- #   install_zsh_env
+    install_zsh_env
 }
 
 main
