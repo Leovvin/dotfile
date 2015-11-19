@@ -24,10 +24,21 @@ function install_zsh_env
     echo_with_line "install zsh end"
 }
 
+function mkdir_initsh
+{
+    if [ -d ~/.initsh ]; then
+        echo ".initsh is exit"
+    else
+        echo "mkdir .initsh"
+        mkdir ~/.initsh
+    fi
+}
+
 function main
 {
     install_vim_env
     install_zsh_env
+    mkdir_initsh
 }
 
 main
