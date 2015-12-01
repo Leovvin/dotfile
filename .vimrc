@@ -31,4 +31,4 @@ autocmd bufenter * if (winnr("$")==1 && exists("b:NERDTreeType") && b:NERDTreeTy
 "taglist
 Bundle 'taglist.vim'
 call vundle#end()            " required
-filetype plugin indent on    " required
+filetype plugin on    " required
