@@ -8,7 +8,10 @@ set ts=4
 set expandtab
 syntax on
 colorscheme desert
-
+inoremap ( ()<ESC>i
+inoremap [ []<ESC>i
+inoremap { {}<ESC>i
+inoremap < <><ESC>i
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "" vundle config
