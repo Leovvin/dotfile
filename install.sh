@@ -14,6 +14,16 @@ function install_vim_env
     echo_with_line "install vim env end"
 }
 
+function install_tmux_env
+{
+    echo_with_line "install tmux start"
+    if [ -f ~/.tmux.conf ]; then
+    	rm -f ~/.tmux.conf
+    fi
+    ln -s ~/.dotfile/.tmux.conf ~
+    echo_with_line "install tmux end"
+}
+
 function install_zsh_env
 {
     echo_with_line "install zsh start"

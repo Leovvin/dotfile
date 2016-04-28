@@ -1,3 +1,4 @@
+let mapleader=",,"
 set nocompatible
 set backspace=indent,eol,start
 set nu
@@ -28,6 +29,7 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'tpope/vim-fugitive'
 Plugin 'L9'
+Plugin 'scrooloose/nerdtree'
 Plugin 'ack.vim'
 Plugin 'git://git.wincent.com/command-t.git'
 Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
