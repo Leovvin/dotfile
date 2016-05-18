@@ -51,3 +51,5 @@ au filetype c,cpp inoremap <leader>[ []<esc>i
 au filetype c,cpp inoremap <leader>{ {<esc>o}<esc>O
 au filetype c,cpp inoremap <leader>' ''<esc>i
 au filetype c,cpp inoremap <leader>" ""<esc>i
+"auto complete code
+au filetype c,cpp inoremap <leader>cf function a(){<Enter>}
