@@ -5,12 +5,6 @@ set cursorline
 set ruler
 set hls
 set mouse=v
-"""""""""""""""""""""""""""""""""'
-"ident set
-"""""""""""""""""""""""""""""""""
-set ts=4
-set sw=4
-set expandtab
 """"""""""""""""""""""""""""""""
 "set number
 """"""""""""""""""""""""""""""""    
@@ -33,3 +27,12 @@ call vundle#end()            " required
 filetype plugin indent on    " required
 let NERDTreeWinPos='left'
 map <F2> :NERDTreeToggle<CR>
+
+""""""""""""""""""""""""""""""""""""""
+"filetype c,c++
+""""""""""""""""""""""""""""""""""""""
+
+"ident set
+au filetype c,cpp set ts=4
+au filetype c,cpp set sw=4
+au filetype c,cpp set expandtab
