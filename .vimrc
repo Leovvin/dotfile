@@ -9,7 +9,9 @@ set shiftwidth=4
 set tabstop=4
 " Use spaces instead of tabs
 set expandtab
-
+""""""""""""""""""""""
+"uncomment part
+"""""""""""""""""""""
 set cursorline
 set ruler
 set hls
@@ -37,11 +39,6 @@ map <F2> :NERDTreeToggle<CR>
 """"""""""""""""""""""""""""""""""""""
 "filetype c,c++
 """"""""""""""""""""""""""""""""""""""
-
-"ident set
-au filetype c,cpp set ts=4
-au filetype c,cpp set sw=4
-au filetype c,cpp set expandtab
 " => Parenthesis/bracket
 au filetype c,cpp vnoremap <leader>( <esc>`>a)<esc>`<i(<esc>
 au filetype c,cpp vnoremap <leader>[ <esc>`>a]<esc>`<i[<esc>
