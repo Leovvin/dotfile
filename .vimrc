@@ -1,14 +1,20 @@
-let mapleader=","
+let mapleader="/"
 set nocompatible
+" Configure backspace so it acts as it should act
 set backspace=indent,eol,start
+"set number
+set nu
+" 1 tab == 4 spaces
+set shiftwidth=4
+set tabstop=4
+" Use spaces instead of tabs
+set expandtab
+
 set cursorline
 set ruler
 set hls
 set mouse=v
-""""""""""""""""""""""""""""""""
-"set number
-""""""""""""""""""""""""""""""""    
-set nu
+set autoread
 syntax on
 """""""""""""""""""""""""""""""""
 "plugin script
@@ -36,3 +42,15 @@ map <F2> :NERDTreeToggle<CR>
 au filetype c,cpp set ts=4
 au filetype c,cpp set sw=4
 au filetype c,cpp set expandtab
+" => Parenthesis/bracket
+au filetype c,cpp vnoremap <leader>( <esc>`>a)<esc>`<i(<esc>
+au filetype c,cpp vnoremap <leader>[ <esc>`>a]<esc>`<i[<esc>
+au filetype c,cpp vnoremap <leader>{ <esc>`>a}<esc>`<i{<esc>
+au filetype c,cpp vnoremap <leader>" <esc>`>a"<esc>`<i"<esc>
+au filetype c,cpp vnoremap <leader>' <esc>`>a'<esc>`<i'<esc>
+
+au filetype c,cpp inoremap <leader>( ()<esc>i
+au filetype c,cpp inoremap <leader>[ []<esc>i
+au filetype c,cpp inoremap <leader>{ {<esc>o}<esc>O
+au filetype c,cpp inoremap <leader>' ''<esc>i
+au filetype c,cpp inoremap <leader>" ""<esc>i
