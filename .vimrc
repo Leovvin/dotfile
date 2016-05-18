@@ -33,4 +33,3 @@ call vundle#end()            " required
 filetype plugin indent on    " required
 let NERDTreeWinPos='left'
 map <F2> :NERDTreeToggle<CR>
-
