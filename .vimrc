@@ -27,9 +27,9 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'tpope/vim-fugitive'
 Plugin 'L9'
+Plugin 'c.vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'ack.vim'
-Plugin 'git://git.wincent.com/command-t.git'
 Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -51,5 +51,3 @@ au filetype c,cpp inoremap <leader>[ []<esc>i
 au filetype c,cpp inoremap <leader>{ {<esc>o}<esc>O
 au filetype c,cpp inoremap <leader>' ''<esc>i
 au filetype c,cpp inoremap <leader>" ""<esc>i
-"auto complete code
-au filetype c,cpp inoremap <leader>cf function a(){<Enter>}
