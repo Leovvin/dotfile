@@ -27,15 +27,23 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'tpope/vim-fugitive'
 Plugin 'L9'
+Plugin 'plasticboy/vim-markdown'
 Plugin 'c.vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'ack.vim'
 Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
 call vundle#end()            " required
 filetype plugin indent on    " required
+
+""""""""""""""""""""""""""""""""""""""
+"NerdTree plugin config
+""""""""""""""""""""""""""""""""""""""
 let NERDTreeWinPos='left'
 map <F2> :NERDTreeToggle<CR>
-
+""""""""""""""""""""""""""""""""""""""
+"vim plugin config
+""""""""""""""""""""""""""""""""""""""
+let g:vim_markdown_frontmatter=1
 """"""""""""""""""""""""""""""""""""""
 "filetype c,c++
 """"""""""""""""""""""""""""""""""""""
