@@ -48,6 +48,7 @@ function main
 {
     install_vim_env
     install_zsh_env
+    install_tmux_env
     mkdir_initsh
 }
 
