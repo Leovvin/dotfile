@@ -4,6 +4,8 @@ set nocompatible
 set backspace=indent,eol,start
 "set number
 set nu
+"no folder
+set nofoldenable
 " 1 tab == 4 spaces
 set shiftwidth=4
 set tabstop=4
@@ -32,6 +34,7 @@ Plugin 'c.vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'ack.vim'
 Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
+Plugin 'valloric/youcompleteme'
 call vundle#end()            " required
 filetype plugin indent on    " required
 
