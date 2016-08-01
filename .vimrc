@@ -4,6 +4,8 @@ set nocompatible
 set backspace=indent,eol,start
 "set number
 set nu
+"set relativenumber
+set relativenumber
 "no folder
 set nofoldenable
 " 1 tab == 4 spaces
