@@ -37,11 +37,12 @@ function install_zsh_env
 function mkdir_initsh
 {
     if [ -d ~/.initsh ]; then
-        echo ".initsh is exit"
+        echo_with_line "initsh folder is exit"
     else
-        echo "mkdir .initsh"
+        echo_with_line "mkdir initsh folder"
         mkdir ~/.initsh
     fi
+    touch ~/.initsh/empty.sh
 }
 
 function main
