@@ -91,3 +91,7 @@ if [ -d ~/.initsh ];then
         fi
     done
 fi
+
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="/home/hel39/.sdkman"
+[[ -s "/home/hel39/.sdkman/bin/sdkman-init.sh" ]] && source "/home/hel39/.sdkman/bin/sdkman-init.sh"
