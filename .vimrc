@@ -16,6 +16,7 @@ set expandtab
 """"""""""""""""""""""
 "uncomment part
 """""""""""""""""""""
+colorscheme desert
 set cursorline
 set ruler
 set hls

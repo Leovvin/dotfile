@@ -45,12 +45,24 @@ function mkdir_initsh
     touch ~/.initsh/empty.sh
 }
 
+function color_scheme
+{
+    if [ -d ~/.dircolors-solarized ]; then
+        echo_with_line "init terminal color scheme is exit"
+    else
+        echo_with_line "init terminal color scheme"
+        git clone git://github.com/seebi/dircolors-solarized.git ~/.dircolors-solarized
+        echo 'eval `dircolors ~/.dircolors-solarized/dircolors.256dark`' > ~/.initsh/color.sh
+    fi
+}
+
 function main
 {
     install_vim_env
     install_zsh_env
     install_tmux_env
     mkdir_initsh
+    color_scheme
 }
 
 main
