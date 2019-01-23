@@ -52,7 +52,7 @@ function color_scheme
     else
         echo_with_line "init terminal color scheme"
         git clone git://github.com/seebi/dircolors-solarized.git ~/.dircolors-solarized
-        echo 'eval `dircolors ~/.dircolors-solarized/dircolors.256dark`' > ~/.initsh/color.sh
+        echo 'eval `dircolors ~/.dircolors-solarized/dircolors.ansi-universal`' > ~/.initsh/color.sh
     fi
 }
 
