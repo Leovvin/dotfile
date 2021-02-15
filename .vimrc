@@ -33,12 +33,9 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'tpope/vim-fugitive'
 Plugin 'L9'
 Plugin 'plasticboy/vim-markdown'
-"Plugin 'valloric/youcompleteme'
-Plugin 'c.vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'ack.vim'
 Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
-Plugin 'valloric/youcompleteme'
 call vundle#end()            " required
 filetype plugin indent on    " required
 
@@ -51,18 +48,3 @@ map <F2> :NERDTreeToggle<CR>
 "vim plugin config
 """"""""""""""""""""""""""""""""""""""
 let g:vim_markdown_frontmatter=1
-""""""""""""""""""""""""""""""""""""""
-"filetype c,c++
-""""""""""""""""""""""""""""""""""""""
-" => Parenthesis/bracket
-au filetype c,cpp vnoremap <leader>( <esc>`>a)<esc>`<i(<esc>
-au filetype c,cpp vnoremap <leader>[ <esc>`>a]<esc>`<i[<esc>
-au filetype c,cpp vnoremap <leader>{ <esc>`>a}<esc>`<i{<esc>
-au filetype c,cpp vnoremap <leader>" <esc>`>a"<esc>`<i"<esc>
-au filetype c,cpp vnoremap <leader>' <esc>`>a'<esc>`<i'<esc>
-
-au filetype c,cpp inoremap <leader>( ()<esc>i
-au filetype c,cpp inoremap <leader>[ []<esc>i
-au filetype c,cpp inoremap <leader>{ {<esc>o}<esc>O
-au filetype c,cpp inoremap <leader>' ''<esc>i
-au filetype c,cpp inoremap <leader>" ""<esc>i
