@@ -47,3 +47,4 @@ map <F2> :NERDTreeToggle<CR>
 "vim plugin config
 """"""""""""""""""""""""""""""""""""""
 let g:vim_markdown_frontmatter=1
+nnoremap <leader>r :write !sh
