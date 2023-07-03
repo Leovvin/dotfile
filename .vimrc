@@ -35,6 +35,8 @@ Plugin 'plasticboy/vim-markdown'
 Plugin 'scrooloose/nerdtree'
 Plugin 'ack.vim'
 Plugin 'tpope/vim-dadbod'
+Plugin 'kristijanhusak/vim-packager'
+Plugin 'kristijanhusak/vim-dadbod-ui'
 Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -49,3 +51,5 @@ map <F2> :NERDTreeToggle<CR>
 """"""""""""""""""""""""""""""""""""""
 let g:vim_markdown_frontmatter=1
 nnoremap <leader>r :write !sh
+let g:dbs = [{'name': 'centos', 'url': 'oracle://usr_sg:apexsoft@CentOS'},{ 'name': 'centos2', 'url': 'oracle:usr_sg/apexsoft@172.16.184.5:1521/orcl' }]
+
