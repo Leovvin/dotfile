@@ -34,6 +34,7 @@ Plugin 'L9'
 Plugin 'plasticboy/vim-markdown'
 Plugin 'scrooloose/nerdtree'
 Plugin 'ack.vim'
+Plugin 'tpope/vim-dadbod'
 Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
 call vundle#end()            " required
 filetype plugin indent on    " required
